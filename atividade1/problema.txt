@@ -1,0 +1,13 @@
+A empresa precisa implementar um sistema de monitoramento centralizado para registrar todas as ações executadas em seus sistemas internos, como vendas, inventário e recursos humanos. Isso visa assegurar a rastreabilidade e a integridade dos dados, evitando inconsistências que podem surgir ao distribuir os logs por diferentes instâncias. Para garantir a eficiência e evitar sobrecarga, o sistema de log deve ser único e centralizado, armazenando todos os registros em um único arquivo ou banco de dados. Além disso, a aplicação deve garantir que apenas uma instância do gerenciador de logs esteja em operação, independentemente do número de módulos ou componentes que geram logs.
+
+Consequências do Problema:
+
+Inconsistência nos Logs: A falta de centralização pode resultar em logs dispersos em múltiplos arquivos ou bancos de dados, dificultando a análise e correlação de eventos entre diferentes sistemas.
+
+Sobrecarga do Sistema: Se múltiplas instâncias do sistema de log forem criadas, isso pode gerar uma sobrecarga significativa no desempenho da aplicação, além de aumentar o risco de erros devido à competição entre instâncias para gravar nos mesmos arquivos ou bancos de dados.
+
+Dificuldade de Diagnóstico: A centralização inadequada dos logs torna mais difícil a identificação e resolução de problemas, já que as informações ficam fragmentadas e podem ser difíceis de acessar de forma rápida e eficiente.
+
+Perda de Dados Importantes: Se o sistema de log não for devidamente gerido, pode haver a perda de registros importantes, comprometendo a rastreabilidade de ações críticas e o cumprimento de requisitos de auditoria ou compliance.
+
+Falta de Eficiência na Manutenção: A ausência de um sistema centralizado pode aumentar o tempo e esforço necessários para manutenção e atualização dos logs, já que seria necessário atualizar múltiplas instâncias em diferentes partes da aplicação.
